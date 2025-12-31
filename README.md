@@ -14,7 +14,7 @@ Contact Form: A dedicated section for lead generation and inquiries.
 
 Fully Responsive: Optimized for mobile, tablet, and desktop viewports.
 
-🛠️ Built With
+🛠️ Focus on
 HTML5: Semantic structure for accessibility.
 
 CSS3: Custom styling using modern techniques (Flexbox).
