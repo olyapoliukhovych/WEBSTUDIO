@@ -1,7 +1,8 @@
-WebStudio - Business Solutions Landing Page
+**WebStudio** - Business Solutions Landing Page
 WebStudio is a modern, responsive landing page designed for digital agencies and consultancy firms. It provides a clean, professional interface to showcase services, introduce team members, and display a portfolio of work to potential clients.
 
 📋 Features
+
 Service Benefits: Highlights key value propositions for clients.
 
 Team Section: Profiles of the experts behind the agency.
@@ -13,6 +14,7 @@ Contact Form: A dedicated section for inquiries.
 Fully Responsive: Optimized for mobile, tablet, and desktop viewports.
 
 🛠️ Focus on
+
 HTML5: Semantic structure for accessibility.
 
 CSS3: Custom styling using modern techniques (Flexbox).
