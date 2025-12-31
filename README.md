@@ -1,16 +1,14 @@
 WebStudio - Business Solutions Landing Page
 WebStudio is a modern, responsive landing page designed for digital agencies and consultancy firms. It provides a clean, professional interface to showcase services, introduce team members, and display a portfolio of work to potential clients.
 
-[Live Demo]([url](https://olyapoliukhovych.github.io/WEBSTUDIO/)) 🚀
-
 📋 Features
 Service Benefits: Highlights key value propositions for clients.
 
 Team Section: Profiles of the experts behind the agency.
 
-Interactive Portfolio: A categorized gallery of previous projects.
+Interactive Portfolio: A gallery of previous projects.
 
-Contact Form: A dedicated section for lead generation and inquiries.
+Contact Form: A dedicated section for inquiries.
 
 Fully Responsive: Optimized for mobile, tablet, and desktop viewports.
 
