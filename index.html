@@ -2,20 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Effective Solutions for Your Business" />
+    <meta
+      name="description"
+      content="Business Solutions Landing Page provides a clean, professional interface to showcase services, introduce team members, and display a portfolio of work to potential clients."
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WEBSTUDIO</title>
+    <title>WebStudio</title>
+
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- for LCP -->
+    <link
+      rel="preload"
+      as="image"
+      href="./images/bg-img/bg-img-mobile.webp"
+      imagesrcset="./images/bg-img/bg-img-mobile.webp 1x, ./images/bg-img/bg-img-mobile@2x.webp 2x"
+      media="(max-width: 767px)"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="./images/bg-img/bg-img-tablet.webp"
+      imagesrcset="./images/bg-img/bg-img-tablet.webp 1x, ./images/bg-img/bg-img-tablet@2x.webp 2x"
+      media="(min-width: 768px) and (max-width: 1157px)"
+      fetchpriority="high"
+    />
+
+    <link
+      rel="preload"
+      as="image"
+      href="./images/bg-img/bg-img-desktop.webp"
+      imagesrcset="./images/bg-img/bg-img-desktop.webp 1x, ./images/bg-img/bg-img-desktop@2x.webp 2x"
+      media="(min-width: 1158px)"
+      fetchpriority="high"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <!-- modern normalize -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
@@ -27,7 +64,11 @@
           >
 
           <!-- burger -->
-          <button class="burger-btn active" type="button">
+          <button
+            class="burger-btn active"
+            type="button"
+            aria-label="open menu"
+          >
             <svg class="burger-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-burger"></use>
             </svg>
@@ -148,10 +189,7 @@
                     ./images/team/img1@1x.webp 1x,
                     ./images/team/img1@2x.webp 2x
                   "
-                  media="(min-width: 1158px)"
                   type="image/webp"
-                  width="264"
-                  height="260"
                 />
 
                 <img
@@ -160,6 +198,7 @@
                   alt="Mark Guerrero"
                   width="264"
                   height="260"
+                  loading="lazy"
                 />
               </picture>
               <div class="dream-team-wrapper">
@@ -172,6 +211,7 @@
                       class="socials-link"
                       href="https://www.instagram.com/"
                       target="_blank"
+                      aria-label="instagram link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -186,6 +226,7 @@
                       class="socials-link"
                       href="https://www.twitter.com/"
                       target="_blank"
+                      aria-label="twitter link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -200,6 +241,7 @@
                       class="socials-link"
                       href="https://www.facebook.com/"
                       target="_blank"
+                      aria-label="facebook link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -214,6 +256,7 @@
                       class="socials-link"
                       href="https://www.linkedin.com/"
                       target="_blank"
+                      aria-label="linkedin link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -235,10 +278,7 @@
                     ./images/team/img2@1x.webp 1x,
                     ./images/team/img2@2x.webp 2x
                   "
-                  media="(min-width: 1158px)"
                   type="image/webp"
-                  width="264"
-                  height="260"
                 />
 
                 <img
@@ -246,6 +286,8 @@
                   src="./images/team/img-2.jpg"
                   alt="Tom Ford"
                   width="264"
+                  height="260"
+                  loading="lazy"
                 />
               </picture>
 
@@ -258,6 +300,7 @@
                       class="socials-link"
                       href="https://www.instagram.com/"
                       target="_blank"
+                      aria-label="instagram link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -272,6 +315,7 @@
                       class="socials-link"
                       href="https://www.twitter.com/"
                       target="_blank"
+                      aria-label="twitter link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -286,6 +330,7 @@
                       class="socials-link"
                       href="https://www.facebook.com/"
                       target="_blank"
+                      aria-label="facebook link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -300,6 +345,7 @@
                       class="socials-link"
                       href="https://www.linkedin.com/"
                       target="_blank"
+                      aria-label="linkedin link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -321,10 +367,7 @@
                     ./images/team/img3@1x.webp 1x,
                     ./images/team/img3@2x.webp 2x
                   "
-                  media="(min-width: 1158px)"
                   type="image/webp"
-                  width="264"
-                  height="260"
                 />
 
                 <img
@@ -332,6 +375,8 @@
                   src="./images/team/img-3.jpg"
                   alt="Camila Garcia"
                   width="264"
+                  height="260"
+                  loading="lazy"
                 />
               </picture>
 
@@ -345,6 +390,7 @@
                       class="socials-link"
                       href="https://www.instagram.com/"
                       target="_blank"
+                      aria-label="instagram link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -359,6 +405,7 @@
                       class="socials-link"
                       href="https://www.twitter.com/"
                       target="_blank"
+                      aria-label="twitter link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -373,6 +420,7 @@
                       class="socials-link"
                       href="https://www.facebook.com/"
                       target="_blank"
+                      aria-label="facebook link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -387,6 +435,7 @@
                       class="socials-link"
                       href="https://www.linkedin.com/"
                       target="_blank"
+                      aria-label="linkedin link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -409,8 +458,6 @@
                     ./images/team/img4@2x.webp 2x
                   "
                   type="image/webp"
-                  width="264"
-                  height="260"
                 />
 
                 <img
@@ -419,6 +466,7 @@
                   alt="Daniel Wilson"
                   width="264"
                   height="260"
+                  loading="lazy"
                 />
               </picture>
 
@@ -432,6 +480,7 @@
                       class="socials-link"
                       href="https://www.instagram.com/"
                       target="_blank"
+                      aria-label="instagram link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -446,6 +495,7 @@
                       class="socials-link"
                       href="https://www.twitter.com/"
                       target="_blank"
+                      aria-label="twitter link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -460,6 +510,7 @@
                       class="socials-link"
                       href="https://www.facebook.com/"
                       target="_blank"
+                      aria-label="facebook link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -474,6 +525,7 @@
                       class="socials-link"
                       href="https://www.linkedin.com/"
                       target="_blank"
+                      aria-label="linkedin link"
                     >
                       <svg class="svg-icon" width="16" height="16">
                         <use
@@ -555,6 +607,7 @@
                     alt="Banking App"
                     width="288"
                     height="280"
+                    loading="lazy"
                   />
                 </picture>
 
@@ -629,6 +682,7 @@
                     alt="Cashless Payment"
                     width="288"
                     height="280"
+                    loading="lazy"
                   />
                 </picture>
 
@@ -698,6 +752,7 @@
                     alt="Meditation App"
                     width="288"
                     height="280"
+                    loading="lazy"
                 /></picture>
 
                 <p class="overlay-text">
@@ -766,6 +821,7 @@
                     alt="Taxi Service"
                     width="288"
                     height="280"
+                    loading="lazy"
                 /></picture>
 
                 <p class="overlay-text">
@@ -834,6 +890,7 @@
                     alt="Screen Illustrations"
                     width="288"
                     height="280"
+                    loading="lazy"
                 /></picture>
 
                 <p class="overlay-text">
@@ -902,6 +959,7 @@
                     alt="Online Courses"
                     width="288"
                     height="280"
+                    loading="lazy"
                 /></picture>
 
                 <p class="overlay-text">
@@ -923,7 +981,7 @@
     <footer class="footer">
       <div class="footer-big-container container">
         <div class="footer-container-a-p">
-          <a href="/" target="_self" class="logo-footer"
+          <a href="#" target="_self" class="logo-footer"
             >Web<span class="accent-two">Studio</span></a
           >
           <p class="footer-text">
@@ -940,6 +998,7 @@
                 class="socials-link"
                 href="https://www.instagram.com/"
                 target="_blank"
+                aria-label="instagram link"
               >
                 <svg class="svg-icon" width="24" height="24">
                   <use
@@ -954,6 +1013,7 @@
                 class="socials-link"
                 href="https://www.twitter.com/"
                 target="_blank"
+                aria-label="twitter link"
               >
                 <svg class="svg-icon" width="24" height="24">
                   <use
@@ -968,6 +1028,7 @@
                 class="socials-link"
                 href="https://www.facebook.com/"
                 target="_blank"
+                aria-label="facebook link"
               >
                 <svg class="svg-icon" width="24" height="24">
                   <use
@@ -982,6 +1043,7 @@
                 class="socials-link"
                 href="https://www.linkedin.com/"
                 target="_blank"
+                aria-label="linkedin link"
               >
                 <svg class="svg-icon" width="24" height="24">
                   <use
@@ -1062,6 +1124,7 @@
                 class="socials-link-menu"
                 href="https://www.instagram.com/"
                 target="_blank"
+                aria-label="instagram link"
               >
                 <svg class="svg-icon-menu" width="24" height="24">
                   <use
@@ -1076,6 +1139,7 @@
                 class="socials-link-menu"
                 href="https://www.twitter.com/"
                 target="_blank"
+                aria-label="twitter link"
               >
                 <svg class="svg-icon-menu" width="24" height="24">
                   <use
@@ -1090,6 +1154,7 @@
                 class="socials-link-menu"
                 href="https://www.facebook.com/"
                 target="_blank"
+                aria-label="facebook link"
               >
                 <svg class="svg-icon-menu" width="24" height="24">
                   <use
@@ -1104,6 +1169,7 @@
                 class="socials-link-menu"
                 href="https://www.linkedin.com/"
                 target="_blank"
+                aria-label="linkedin link"
               >
                 <svg class="svg-icon-menu" width="24" height="24">
                   <use
@@ -1121,7 +1187,11 @@
     <!-- BACKDROP -->
     <div class="backdrop">
       <div class="modal">
-        <button class="close-button" type="button">
+        <button
+          class="close-button"
+          type="button"
+          aria-label="close modal window"
+        >
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -1225,7 +1295,7 @@
       </div>
     </div>
 
-    <script type="module" src="./modal.js"></script>
-    <script type="module" src="./menu.js"></script>
+    <script type="module" src="./modal.js" defer></script>
+    <script type="module" src="./menu.js" defer></script>
   </body>
 </html>

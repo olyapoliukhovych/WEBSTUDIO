@@ -468,22 +468,24 @@ img {
       rgba(46, 47, 66, 0.7)
     ),
     url("../images/bg-img/bg-img-mobile.jpg");
+
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    image-set(
+      url("../images/bg-img/bg-img-mobile.webp") 1x,
+      url("../images/bg-img/bg-img-mobile@2x.webp") 2x,
+      url("../images/bg-img/bg-img-mobile.jpg") 1x,
+      url("../images/bg-img/bg-img-mobile@2x.jpg") 2x
+    );
+
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   width: 100%;
   margin: 0 auto;
   text-align: center;
-}
-
-@media (min-resolution: 192dpi) {
-  .section-one {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url("../images/bg-img/bg-img-mobile@2x.jpg");
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -494,16 +496,17 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg-img/bg-img-tablet.jpg");
-  }
-}
 
-@media screen and (min-width: 768px) and (min-resolution: 192dpi) {
-  .section-one {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/bg-img/bg-img-tablet@2x.jpg");
+      image-set(
+        url("../images/bg-img/bg-img-tablet.webp") 1x,
+        url("../images/bg-img/bg-img-tablet@2x.webp") 2x,
+        url("../images/bg-img/bg-img-tablet.jpg") 1x,
+        url("../images/bg-img/bg-img-tablet@2x.jpg") 2x
+      );
   }
 }
 
@@ -515,16 +518,17 @@ img {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/bg-img/bg-img-desktop.jpg");
-  }
-}
 
-@media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
-  .section-one {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url("../images/bg-img/bg-img-desktop@2x.jpg");
+      image-set(
+        url("../images/bg-img/bg-img-desktop.webp") 1x,
+        url("../images/bg-img/bg-img-desktop@2x.webp") 2x,
+        url("../images/bg-img/bg-img-desktop.jpg") 1x,
+        url("../images/bg-img/bg-img-desktop@2x.jpg") 2x
+      );
   }
 }
 
